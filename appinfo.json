@@ -1,0 +1,10 @@
+{
+	"id": "com.dta3.mhd",
+	"version": "1.0.0",
+	"vendor": "Jakuje",
+	"type": "web",
+	"main": "index.html",
+	"title": "Brno MHD Display",
+	"icon": "icon.png",
+	"uiRevision":2
+}
