@@ -5,6 +5,6 @@
 	"type": "web",
 	"main": "index.html",
 	"title": "Brno MHD Display",
-	"icon": "icon.png",
+	"icon": "logo64.png",
 	"uiRevision":2
 }

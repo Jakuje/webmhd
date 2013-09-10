@@ -1,1 +1,6 @@
 /*Your CSS here*/
+
+div.enyo-menuitem.enyo-checked.enyo-menucheckitem-caption, .enyo-menuitem.enyo-checked .enyo-menucheckitem-caption {
+	background-image: none;
+}
+
