@@ -13,8 +13,7 @@ enyo.kind({
 		]},
 		{kind: "AppMenu", components: [ // In chromium: CTRL + `
 			{kind: "EditMenu"},
-			{caption: "Add Favorites", name: "menuRefresh", onclick: "doRefresh"},
-			{caption: "Preferences", onclick: "showPreferences"},
+			//{caption: "Preferences", onclick: "showPreferences"},
 			{caption: "Help", onclick: "showHelp"}
 		]},
 		{
@@ -55,6 +54,7 @@ enyo.kind({
 	
 	create: function() {
 		this.inherited(arguments);
+		enyo.setAllowedOrientation( this.getPrefs("orientation") );
 	},
 	showHelp: function(){
 		this.$.pane.selectViewByName("pHelp");
@@ -72,7 +72,7 @@ enyo.kind({
 	
 	prefs: null,
 	
-	default_prefs: {"favorites": [], "current": "", "history": []},
+	default_prefs: {"favorites": [], "current": "", "history": [], 'orientation': 'up'},
 	
 	getPrefs: function(key){
 		if( !this.prefs ){

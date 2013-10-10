@@ -15,7 +15,7 @@ enyo.kind({
 			
 			//{content: "Page Header"}
 		]},
-		{flex: 1, name: "Main", className: "enyo-bg", kind: "Scroller", components: [
+		{flex: 1, name: "scroller", className: "enyo-bg", kind: "Scroller", components: [
 			{name: "list", kind: "VirtualRepeater",
 			onSetupRow: "listGetItem", components: [
 				{kind: "Item", layoutKind: "VFlexLayout", components: [
@@ -196,6 +196,7 @@ enyo.kind({
 						}
 					}
 					this.$.list.render();
+					this.$.scroller.setScrollTop(0);
 				} else {
 					// nejsou vysledky: neexistuji odjezdy, nebo je nejaky vypadek
 					this.owner.showPopup("Služba vrátila prázný seznam výsledků. Z dané zastávky nejede žádný spoj, nebo je web IDS JMK nedostupný.");

@@ -9,7 +9,9 @@ enyo.kind({
 			{kind: "Spacer"}
 		]},
 		{kind: "Item", content: "<b>Brno MHD Display</b> by <i>Jakuje</i>"},
-		{kind: "Item", content: "Data čerpána z IDS JMK, předzpracování: Reinto.cz"},
+		{kind: "Item", content: "Data čerpána z IDS JMK, předzracování: Reinto.cz"},
+		
+		{kind: "Item", content: "Local aplication for public transport in Brno, Czech republic"},
 		
 		{kind: "RowGroup", caption: "Help", components: [
 			{kind: "HFlexBox", onclick: "showWeb", components: [
